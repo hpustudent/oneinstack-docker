@@ -1,0 +1,12 @@
+
+    操作命令
+```
+docker build -t centos_nginx_php:v1 .
+
+docker run -d -p 888:80 --name xlb3 centos_nginx_php:v1
+
+```
+    仅包含了nginx1.6+php7.1
+    需要其他版本的可以修改Dockerfile
+
+    安装命令行选择https://oneinstack.com/auto/自动安装模式，不要选择-安装后重启
