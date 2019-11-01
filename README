@@ -10,3 +10,9 @@ docker run -d -p 888:80 --name xlb3 centos_nginx_php:v1
     需要其他版本的可以修改Dockerfile
 
     安装命令行选择https://oneinstack.com/auto/自动安装模式，不要选择-安装后重启
+
+    https://oneinstack.com/download/
+    文件太大无法上传，
+    下载的文件放到soft目录
+
+    docker pull q4323636/centos_nginx_php
