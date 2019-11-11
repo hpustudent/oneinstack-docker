@@ -3,7 +3,7 @@
 ```
 docker build -t centos_nginx_php:v1 .
 
-docker run -d -p 888:80 --name xlb3 centos_nginx_php:v1
+docker run -d -p 80:80 --name nginx centos_nginx_php:v1
 
 ```
     仅包含了nginx1.6+php7.1
@@ -16,3 +16,10 @@ docker run -d -p 888:80 --name xlb3 centos_nginx_php:v1
     下载的文件放到soft目录
 
     docker pull q4323636/centos_nginx_php
+
+#####增加了thinkphp的优化
+```
+docker cp php-fpm.conf nginx:/usr/local/php/etc/php-fpm.conf
+docker cp nginx.conf nginx:/usr/local/nginx/conf/nginx.conf
+docker restart nginx
+```
